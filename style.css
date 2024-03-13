@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-pic {
+    width: 200px; /* Reduces the size of the profile picture */
+    height: 200px; /* Make this equal to the width for a perfect circle */
+    float: left; /* Aligns the image to the left of the surrounding content */
+    margin-left: -200px; /* Adds some space between the image and the text */
+    object-position: left;
+
+}
+
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+header {
+    background-color: #1DB954; /* Green background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 90% / 600%; 
+}
+
+
+header h1, header p {
+    margin: 0;
+    color: #000;
+}
+
+.section-title {
+    font-size: 24px;
+    border-bottom: 2px solid #1DB954;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 50px;
+
+}
+
+ul {
+    list-style: none; /* Removes default list bullet */
+    padding: 0; /* Removes default padding */
+}
+
+ul li {
+    list-style: none; /* Removes default list bullet */
+    padding-left: 2em; /* Provides space for the SVG icon */
+    position: relative; /* Establishes a positioning context for absolutely positioned children */
+    margin-bottom: 10px;
+}
+
+.list-icon {
+    filter: brightness(0) invert(1);
+    vertical-align: middle; /* Aligns the icon vertically with the text */
+    margin-left: 1em; /* Adjust if necessary, to align with the start of the text */
+    width: 1em; /* Adjust the size of your SVG icon */
+    margin-right: 0.7em; /* Adjust the space between the icon and the text */
+}
+
+.list-icon-play {
+    filter: brightness(0) invert(1);
+    vertical-align: middle; /* Aligns the icon vertically with the text */
+    margin-left: 1em; /* Adjust if necessary, to align with the start of the text */
+    width: .7em; /* Adjust the size of your SVG icon */
+    margin-right: 0.7em; /* Adjust the space between the icon and the text */
+}
+
+
+.my-website-link {
+    color: #ffffff; /* Sets the link color to white */
+    text-decoration: none; /* Optional: removes the underline from links */
+    padding-left: 5px; /* Adjusts space between the text and the link */
+    border-bottom: 1px solid currentColor; /* Creates a solid underline 2px thick */
+
+}
