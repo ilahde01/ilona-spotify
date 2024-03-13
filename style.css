@@ -49,6 +49,7 @@ header h1, header p {
 ul {
     list-style: none; /* Removes default list bullet */
     padding: 0; /* Removes default padding */
+    margin-top: 2px
 }
 
 ul li {
