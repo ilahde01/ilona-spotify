@@ -9,9 +9,9 @@ body {
 }
 
 .profile-pic {
-    width: 200px; /* Reduces the size of the profile picture */
-    height: 200px; /* Make this equal to the width for a perfect circle */
-    float: left; /* Aligns the image to the left of the surrounding content */
+    width: 200px; 
+    height: 200px; 
+    float: left; 
     margin-left: -200px; 
     object-position: left;
 
@@ -22,19 +22,18 @@ body {
     .profile-pic {
         width: 150px;
         height: 150px;
-        float: none; /* Disable floating for smaller screens */
-        display: block; /* Use block to center the image */
-        margin: 0 auto 20px; /* Center-align and add margin below */
+        float: none;
+        display: block; 
+        margin: 0 auto 20px; 
         margin-top: 20px
     }
 }
 
-/* Adjustments for small screens (e.g., smartphones) */
 @media (max-width: 480px) {
     .profile-pic {
         width: 100px;
         height: 100px;
-        margin: 0 auto 10px; /* Further adjust for smaller screens */
+        margin: 0 auto 10px; 
     }
 }
 
@@ -44,7 +43,7 @@ body {
     padding: 20px;
 }
 header {
-    background-color: #1DB954; /* Green background */
+    background-color: #1DB954;
     padding: 20px;
     text-align: center;
     border-radius: 90% / 600%; 
@@ -79,7 +78,6 @@ header h1, header p {
 
 .section-good {
     font-size: 40px;
-    /* padding-bottom: 5px; */
     display: inline-block;
     margin-top: 30px;
     margin-left: 50px;
@@ -87,40 +85,40 @@ header h1, header p {
 }
 
 ul {
-    list-style: none; /* Removes default list bullet */
-    padding: 0; /* Removes default padding */
+    list-style: none;
+    padding: 0; 
     margin-top: 2px
 }
 
 ul li {
-    list-style: none; /* Removes default list bullet */
-    padding-left: 2em; /* Provides space for the SVG icon */
-    position: relative; /* Establishes a positioning context for absolutely positioned children */
+    list-style: none; 
+    padding-left: 2em; 
+    position: relative; 
     margin-bottom: 10px;
 }
 
 .list-icon {
     filter: brightness(0) invert(1);
-    vertical-align: middle; /* Aligns the icon vertically with the text */
-    margin-left: 1em; /* Adjust if necessary, to align with the start of the text */
-    width: 1em; /* Adjust the size of your SVG icon */
-    margin-right: 0.7em; /* Adjust the space between the icon and the text */
+    vertical-align: middle; 
+    margin-left: 1em; 
+    width: 1em; 
+    margin-right: 0.7em; 
 }
 
 .list-icon-play {
     filter: brightness(0) invert(1);
-    vertical-align: middle; /* Aligns the icon vertically with the text */
-    margin-left: 1em; /* Adjust if necessary, to align with the start of the text */
-    width: .7em; /* Adjust the size of your SVG icon */
-    margin-right: 0.7em; /* Adjust the space between the icon and the text */
+    vertical-align: middle; 
+    margin-left: 1em; 
+    width: .7em; 
+    margin-right: 0.7em;
 }
 
 
 .my-website-link {
-    color: #ffffff; /* Sets the link color to white */
-    text-decoration: none; /* Optional: removes the underline from links */
-    padding-left: 5px; /* Adjusts space between the text and the link */
-    border-bottom: 1px solid currentColor; /* Creates a solid underline 2px thick */
+    color: #ffffff; 
+    text-decoration: none; 
+    padding-left: 5px;
+    border-bottom: 1px solid currentColor; 
 
 }
 
@@ -134,27 +132,26 @@ ul li {
 
 .card {
     background-color: #292929;
-    border-radius: 5px; /* Adjust as needed */
+    border-radius: 5px; 
     overflow: hidden;
-    display: flex; /* Sets a flex container, aligning children in a row */
-    align-items: center; /* Centers items vertically */
-    text-align: left; /* Align text to the left */
-    /* flex-direction: column; Stacks the image and text on top of each other */
-    height: 90px; /* Allows the card to be as tall as its content */
+    display: flex;
+    align-items: center; 
+    text-align: left; 
+    height: 90px; 
 
 }
 
 .experience-image {
-    flex: 1; /* Takes up 1/4 of the flex container */
-    max-width: 25%; /* Limits the image width to 25% of its parent */
-    height: 100%; /* Makes the image fill the height of the container */
+    flex: 1; 
+    max-width: 25%; 
+    height: 100%;
     object-fit: cover;
-    border-top-left-radius: 8px; /* Matches the container's border-radius */
-    border-bottom-left-radius: 24x; /* Matches the container's border-radius */
+    border-top-left-radius: 8px; 
+    border-bottom-left-radius: 24x; 
 }
 
 .experience-text {
-    flex: 2; /* Takes up the remaining space */
-    padding: 10px 20px; /* Adds some padding around the text */
+    flex: 2; 
+    padding: 10px 20px; 
     
 }
