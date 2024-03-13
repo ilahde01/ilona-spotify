@@ -12,11 +12,31 @@ body {
     width: 200px; /* Reduces the size of the profile picture */
     height: 200px; /* Make this equal to the width for a perfect circle */
     float: left; /* Aligns the image to the left of the surrounding content */
-    margin-left: -200px; /* Adds some space between the image and the text */
+    margin-left: -200px; 
     object-position: left;
+
 
 }
 
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        float: none; /* Disable floating for smaller screens */
+        display: block; /* Use block to center the image */
+        margin: 0 auto 20px; /* Center-align and add margin below */
+        margin-top: 20px
+    }
+}
+
+/* Adjustments for small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px; /* Further adjust for smaller screens */
+    }
+}
 
 .container {
     max-width: 800px;
@@ -107,12 +127,9 @@ ul li {
 
 .experience-grid {
     display: grid;
-    /* grid-template-columns: repeat(3, minmax(350px, 0fr)); At least 200px wide, but can grow if there's space */
-    grid-template-columns: repeat(3, 350px); /* Fixed width for each column */
-
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 10px 40px;
-
 }
 
 .card {
